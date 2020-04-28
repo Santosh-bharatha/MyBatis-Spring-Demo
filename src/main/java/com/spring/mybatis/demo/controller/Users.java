@@ -5,6 +5,7 @@ public class Users {
 	private String name;
 	private long salary;
 	private Integer id;
+	
 	public String getName() {
 		return name;
 	}

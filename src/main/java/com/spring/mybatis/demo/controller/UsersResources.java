@@ -38,5 +38,14 @@ public class UsersResources {
 	 return "Hello, world"; 
 	 }
 	
+	@GetMapping("/update")
+	private List<Users> update(){
+	Users users = new Users();
+	users.setName("youtube");
+	users.setSalary(5000L);
+	
+	userMapper.insert(users);
+	return userMapper.findAll();
+	}
 
 }
